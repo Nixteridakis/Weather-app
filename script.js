@@ -33,6 +33,8 @@ $(document).ready(function() {
       /* Change HTML values */
 
   function htmlRender(weatherObj) {
+    $("#title").text("WEATHER APP");
+    $(".convButton").html("&#8451;");          
     $(".city").html(weatherObj.name);
     $(".temp").html(Math.round(weatherObj.main.temp));
     $(".main").html(weatherObj.weather[0].main);
